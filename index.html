@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawal System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-machine">
+        <div class="atm-header">
+            <h2>VALUE LADEN BANK</h2>
+            <p>ATM Withdrawal System</p>
+        </div>
+
+        <div class="form-container">
+            <label>Account Holder Name</label>
+            <input type="text" id="holderName" placeholder="Ex: Rahul">
+
+            <label>Account Balance (₹)</label>
+            <input type="text" id="balance" placeholder="Ex: 10000">
+
+            <label>Withdrawal Amount (₹)</label>
+            <input type="text" id="withdrawAmount" placeholder="Ex: 3000">
+
+            <button onclick="processWithdrawal()">Withdraw</button>
+            <button class="secondary" onclick="resetForm()">Clear</button>
+        </div>
+
+        <div id="receipt" class="receipt hidden">
+            <div class="line">---------------- ATM TRANSACTION ----------------</div>
+            <div id="receiptContent"></div>
+            <div class="line">--------------------------------------------------</div>
+        </div>
+        
+        <div id="errorMsg" class="error-msg hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
