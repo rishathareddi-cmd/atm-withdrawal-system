@@ -1,0 +1,75 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+body {
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.atm-machine {
+    background: #ffffff;
+    width: 380px;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.atm-header {
+    text-align: center;
+    background: #1e40af;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.atm-header h2 { font-size: 18px; letter-spacing: 1px; }
+.atm-header p { font-size: 12px; opacity: 0.8; margin-top: 4px; }
+
+label { display:block; font-size:13px; font-weight:600; margin:12px 0 5px; color:#334155; }
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+input:focus { border-color: #2563eb; }
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 11px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover { background: #1d4ed8; }
+button.secondary { background: #e2e8f0; color: #334155; margin-top:8px; }
+
+.receipt {
+    margin-top: 20px;
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 13px;
+    border-left: 4px solid #2563eb;
+}
+.line { text-align:center; margin: 5px 0; color:#64748b; }
+.hidden { display: none; }
+.success { color: #16a34a; font-weight: bold; }
+.failed { color: #dc2626; font-weight: bold; }
+.error-msg {
+    margin-top: 15px;
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #fecaca;
+}
